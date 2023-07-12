@@ -24,7 +24,7 @@ public class HelloWorldController {
 
     @GetMapping("/test")
     public HttpStatus test(){
-        return HttpStatus.ACCEPTED;
+        return HttpStatus.OK;
     }
 
     @GetMapping("/client/{id}")
