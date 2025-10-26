@@ -13,6 +13,11 @@ public class ClientService {
     public ClientService(ClientJpaRepository clientJpaRepository){
         this.clientJpaRepository = clientJpaRepository;
     }
+
+    /**
+     * second pull request
+     * @param client
+     */
     public void setClient(Client client){
         clientJpaRepository.save(client);
     }
