@@ -19,7 +19,11 @@ public class ClientService {
      * @param client
      */
     public void setClient(Client client){
+        try{
         clientJpaRepository.save(client);
+        }catch(exception e){
+            system.out.println("test");
+        }
     }
 
     /**
