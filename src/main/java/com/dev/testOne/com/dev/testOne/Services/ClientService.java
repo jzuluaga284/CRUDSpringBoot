@@ -24,6 +24,10 @@ public class ClientService {
         return clientJpaRepository.findById(id);
     }
 
+    /**
+     * This is a documentation test
+     * @param client
+     */
     public void upDateClient(Client client){
         clientJpaRepository.save(client);
     }
