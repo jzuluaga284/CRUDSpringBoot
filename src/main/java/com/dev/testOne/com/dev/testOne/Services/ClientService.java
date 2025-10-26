@@ -20,6 +20,12 @@ public class ClientService {
     public void deleteClient(int id){
         clientJpaRepository.deleteById(id);
     }
+
+    /**
+     * Test 2 ----------------
+     * @param id
+     * @return
+     */
     public Optional<Client> getClient(int id){
         return clientJpaRepository.findById(id);
     }
