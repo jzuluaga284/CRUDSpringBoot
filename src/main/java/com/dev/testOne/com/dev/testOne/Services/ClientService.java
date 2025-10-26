@@ -17,6 +17,10 @@ public class ClientService {
         clientJpaRepository.save(client);
     }
 
+    /**
+     * pull request validation
+     * @param id
+     */
     public void deleteClient(int id){
         clientJpaRepository.deleteById(id);
     }
